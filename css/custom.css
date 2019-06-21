@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body {
+  font-family: "Source Sans Pro", serif;
+  font-size: 1.15em;
+}
+
+.post-title,
+.post-info,
+.catalogue-title,
+.nav-title,
+.catalogue-time,
+.pagination,
+.nav a {
+  font-family: "PT Sans";
+}
+
+h1,
+h2,
+h3,
+footer {
+  font-family: "PT Sans";
+}
