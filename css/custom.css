@@ -1,11 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:100,200,300|Ubuntu+Mono:300Regular");
 
 body {
-  font-family: "Source Sans Pro", serif;
-  font-size: 1.15em;
+  font-family: "Ubuntu", serif;
 }
 
 .post-title,
@@ -15,12 +11,19 @@ body {
 .catalogue-time,
 .pagination,
 .nav a {
-  font-family: "PT Sans";
+  font-family: "Ubuntu";
+}
+
+code {
+  font-family: "Ubuntu Mono"
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 footer {
-  font-family: "PT Sans";
+  font-family: "Ubuntu";
 }
