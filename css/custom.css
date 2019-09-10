@@ -4,6 +4,9 @@ body {
   font-family: "Ubuntu", serif;
 }
 
+blockquote {
+    font-family: "Ubuntu",bitstream charter,serif;
+}
 .post-title,
 .post-info,
 .catalogue-title,
