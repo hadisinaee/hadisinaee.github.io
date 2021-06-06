@@ -4,6 +4,10 @@ body {
     color: #071013;
 }
 
+a {
+    color: #8C1515;
+}
+
 .body {
     margin: auto;
 }
@@ -154,10 +158,6 @@ body {
     margin-top: 2.5%;
 }
 
-.footer {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
 .copy_right {
     font-size: small;
 }
