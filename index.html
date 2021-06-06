@@ -1,4 +1,585 @@
-<!doctype html><html><head><meta name=generator content="Hugo 0.58.1"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Hadi Sinaee- Entrepreneur, In Love With Data!</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=alternate type=application/rss+xml href=https://hadisinaee.github.io/index.xml title="Hadi Sinaee"><meta property=og:title content="Hadi Sinaee"><meta property=og:description content><meta property=og:type content=website><meta property=og:url content=https://hadisinaee.github.io/><meta property=og:updated_time content=2019-08-21T00:34:53+04:30><meta name=twitter:card content=summary><meta name=twitter:title content="Hadi Sinaee"><meta name=twitter:description content><link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel=stylesheet><link rel=stylesheet type=text/css media=screen href=/css/normalize.css><link rel=stylesheet type=text/css media=screen href=/css/main.css><script src=https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js></script><script src=/js/main.js></script></head><body><div class="container wrapper"><div class=header><h1 class=site-title>Hadi Sinaee</h1><div class=site-description><h2>Entrepreneur, In Love With Data!</h2><nav class="nav social"><ul class=flat><a href=https://github.com/hadisinaee title=Github><i data-feather=github></i></a><a href=https://twitter.com/hadisinaee title=Twitter><i data-feather=twitter></i></a><a href=mailto:myname.at.ostadkar.pro title=Email><i data-feather=mail></i></a><a href=/index.xml title=RSS><i data-feather=rss></i></a></ul></nav></div><nav class=nav><ul class=flat><li><a href=/>Home</a></li><li><a href=/posts>All posts</a></li><li><a href=/about>About</a></li><li><a href=/tags>Tags</a></li></ul></nav></div><div class="recent-posts section"><h2 class=section-header>Recent posts</h2><div class=posts><div class=post><div class=meta>Aug 21, 2019</div><a class=title href=/posts/distributed-systems-part-one/>Introduction To Cloud and Distributed Systems - Part One</a> &mdash;
-<span class=description>### TLDR
-This post is the first part of a series of posts about cloud and distributed systems. In this part, I try to i...</span></div><div class=post><div class=meta>May 23, 2019</div><a class=title href=/posts/setting-up-ubuntu-server-18.04-on-virtualbox-6/>Setting Up Ubuntu Server 18.04 on Virtualbox 6</a> &mdash;
-<span class=description>**TLDR;** In this post, I am going to set up a cluster of ubuntu servers using Virtualbox 6 on a Mac OS. I will assign ...</span></div></div></div></div><div class="footer wrapper"><nav class=nav><div><a href=https://github.com/vividvilla/ezhil>Ezhil theme</a> | Built with <a href=https://gohugo.io>Hugo</a></div></nav></div><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-126465782-2','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><script>feather.replace()</script></body></html>
+<!DOCTYPE html>
+<html><head>
+	<meta name="generator" content="Hugo 0.83.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+
+    <title>Hadi Sinaee</title>
+</head><body class="container h-100">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+
+<div class="about row w-100">
+    
+
+
+
+<div class="row w-100 justify-content-center">
+    <img class="rounded-circle  " src="images/profile.png" alt="profile_picture" id="profile_picture" />
+</div>
+
+
+
+<div class=" row w-100 justify-content-center main_color" id="full_name">
+    Hadi Sinaee
+</div>
+
+
+
+<div class="affiliations row w-100 justify-content-center">
+    <div class="row w-100 justify-content-center">
+        
+        <div class="row w-100 justify-content-center" id="title-name">
+            <span class="main_color" id="title">
+                Ph.D.,
+            </span>
+            <span id="name" class="text-muted">
+                Stanford University
+            </span>
+        </div>
+        <div class="row w-100 justify-content-center text-muted" id="email">
+            email@cs.stanford.edu
+        </div>
+
+
+        
+        <div class="row w-100 justify-content-center" id="title-name">
+            <span class="main_color" id="title">
+                CEO &amp; Co-Founder,
+            </span>
+            <span id="name" class="text-muted">
+                The Coolest Startup In the World
+            </span>
+        </div>
+        <div class="row w-100 justify-content-center text-muted" id="email">
+            email@mycoolstartup.ai
+        </div>
+
+
+        
+    </div>
+</div>
+
+
+
+<div class="socials row w-100  justify-content-center">
+    <div class="row w-100 justify-content-center">
+        
+        
+        
+        
+        
+        
+
+
+        
+        <a class="main_color" href='https://scholar.google.com/hadisinaee' target="_blank">
+            <i class="ai ai-2x ai-google-scholar academic_icons_customize"></i>
+        </a>
+        
+
+        
+        <a class="main_color" href='https://github.com/hadisinaee' target="_blank">
+            <i data-feather="github"></i>
+        </a>
+        
+
+        
+        <a class="main_color" href='https://twitter.com/HadiSinaee' target="_blank">
+            <i data-feather="twitter"></i>
+        </a>
+        
+
+        
+        <a class="main_color" href='https://facebook.com/hadisinaee' target="_blank">
+            <i data-feather="facebook"></i>
+        </a>
+        
+
+
+        
+        <a class="main_color" href='https://twitch.com/hadisinaee' target="_blank">
+            <i data-feather="twitch"></i>
+        </a>
+        
+
+        
+        <a class="main_color" href='cv.pdf' target="_blank">
+            <i class="ai ai-2x ai-cv academic_icons_customize"></i>
+        </a>
+        
+
+    </div>
+</div>
+
+
+
+<div class="introduction row w-100 text-justify">
+    <div class="col w-100">
+        <p>Donec sollicitudin, ante pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, tincidunt sed mi. In at dui lectus. Integer ante arcu, vestibulum fermentum ante eu, maximus maximus quam. Curabitur placerat cursus posuere. Phasellus dui lorem, varius a augue non, eleifend accumsan mauris. Aenean varius posuere feugiat. In hac habitasse platea dictumst. Aenean quis ex quis nisl consequat fermentum in vitae nunc. Proin consectetur ac nulla in tempus. Maecenas enim nisi, pulvinar sit amet fermentum eget, ultrices vitae enim. Etiam vel sollicitudin felis.</p>
+<p>Donec sollicitudin, ante pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, tincidunt sed mi. In at dui lectus. Integer ante arcu, vestibulum fermentum ante eu, maximus maximus quam. Curabitur placerat cursus posuere. Phasellus dui lorem, varius a augue non, eleifend accumsan mauris. Aenean varius posuere feugiat. In hac habitasse platea dictumst. Aenean quis ex quis nisl consequat fermentum in vitae nunc. Proin consectetur ac nulla in tempus. Maecenas enim nisi, pulvinar sit amet fermentum eget, ultrices vitae enim. Etiam vel sollicitudin felis.</p>
+
+    </div>
+</div>
+
+</div>
+
+<div class="about row w-100">
+    
+
+
+
+
+
+<div class="interests col ">
+    <h4 class="main_color">Interests</h4>
+    <ul>
+        
+        <li>
+            Data Intensive Systems
+        </li>
+        
+        <li>
+            Distributed Systems
+        </li>
+        
+        <li>
+            Data Streaming Platforms
+        </li>
+        
+        <li>
+            Large-Scale Data Processing Platforms
+        </li>
+        
+    </ul>
+</div>
+
+
+
+<div class="academia col">
+    <h4 class="main_color">Academia</h4>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    Stanford University
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2021
+                    
+                    - present
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    Ph.D. Data Systems
+
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    Sharif University of Technology
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2013
+                    
+                    - 2016
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    M.Sc. Software Engineering
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="other_info row text-muted">
+                <div class="col">
+                    graduated without first class honor, supervised by Prof. Very Cool!
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    University of Kashan
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2009
+                    
+                    - 2013
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    B.Sc. Software Engineering
+
+                    
+                    , Minor: Statistics
+                    
+                </div>
+            </div>
+
+            
+            <div class="other_info row text-muted">
+                <div class="col">
+                    graduated with first class honor, supervised by Prof.  Cool!
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+        <div class="row w-100">
+            <div class="col w-100">
+                
+                <h3 class="row  w-100 section-title main_color"> Recent Publications </h3>
+                
+
+                
+                <h6 class="row w-100 section-subtitle  text-muted"> Custom Subtitle: see my google scholar for the latest list </h6>
+                
+            </div>
+        </div>
+        
+
+
+
+
+
+<div class="publications row w-100">
+    <div class="col w-100">
+        
+        <div class="publication row  w-100">
+
+            <div class="section-1 w-100">
+                <span>
+                    Your Paper Name Goes Here,
+                </span>
+
+                <span class="text-muted publication-date">
+                    2018,
+                </span>
+
+                <span class="text-muted publication-name">
+                    Journal of Machine Learning
+                </span>
+
+            </div>
+
+            <div class="section-2 text-muted w-100">
+
+                
+
+                
+                
+                <span>
+                    Your Full Name
+                </span>
+                
+                <span class="separator">
+                    ,
+                </span>
+                
+                
+                <span>
+                    Another Researcher
+                </span>
+                
+                
+                
+
+            </div>
+
+            
+            
+            <div class="section-3  w-100">
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna" target="_blank">pdf</a>
+                
+
+                
+                <a class="main_color text-decoration-none rounded " href="https://github.com/hadisinaee/avicenna" target="_blank">code</a>
+                
+
+
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna"
+                    target="_blank">slides</a>
+                
+
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna" target="_blank">video</a>
+                
+
+            </div>
+            
+
+
+
+        </div>
+
+        
+        <div class="publication row  w-100">
+
+            <div class="section-1 w-100">
+                <span>
+                    Your Paper Name Goes Here,
+                </span>
+
+                <span class="text-muted publication-date">
+                    2016,
+                </span>
+
+                <span class="text-muted publication-name">
+                    Journal of Machine Learning
+                </span>
+
+            </div>
+
+            <div class="section-2 text-muted w-100">
+
+                
+
+                
+                
+                <span>
+                    Your Full Name
+                </span>
+                
+                <span class="separator">
+                    ,
+                </span>
+                
+                
+                <span>
+                    Author Name
+                </span>
+                
+                
+                
+
+            </div>
+
+            
+            
+            <div class="section-3  w-100">
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna" target="_blank">pdf</a>
+                
+
+                
+                <a class="main_color text-decoration-none rounded " href="https://github.com/hadisinaee/avicenna" target="_blank">code</a>
+                
+
+
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna"
+                    target="_blank">slides</a>
+                
+
+                
+                <a class="main_color text-decoration-none rounded" href="https://github.com/hadisinaee/avicenna" target="_blank">video</a>
+                
+
+            </div>
+            
+
+
+
+        </div>
+
+        
+
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+        <div class="row w-100">
+            <div class="col w-100">
+                
+                <h3 class="row  w-100 section-title main_color"> Projects </h3>
+                
+
+                
+                <h6 class="row w-100 section-subtitle  text-muted"> Custom Subtitle: see my github for the complete list </h6>
+                
+            </div>
+        </div>
+        
+
+
+
+
+
+<div class="projects row w-100">
+    <div class="col w-100">
+        
+        <div class="project row w-100">
+            <div class="section-1 w-100">
+                <span class="project-title">
+                    Vestibulum: Maecenas ac eros id libero dapibus vehicula a ut erat.
+                </span>
+            </div>
+
+            
+            
+            <div class="section-2  w-100">
+                
+                <a class="main_color text-decoration-none rounded " href="" target="_blank">website</a>
+                
+            </div>
+            
+
+
+        </div>
+        
+        <div class="project row w-100">
+            <div class="section-1 w-100">
+                <span class="project-title">
+                    Quisque: Tristique iaculis augue, et ornare nibh pretium in.
+                </span>
+            </div>
+
+            
+            
+            <div class="section-2  w-100">
+                
+                <a class="main_color text-decoration-none rounded " href="" target="_blank">website</a>
+                
+            </div>
+            
+
+
+        </div>
+        
+
+
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<p class="copy_right row w-100 justify-content-center footer text-center text-muted secondary_font">
+    <span class="row w-100 justify-content-center">Copyright (c) 2021, Hadi Sinaee</span>
+    <br>
+    <span class=" row w-100 justify-content-center">
+        <a class="main_color text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank">Created By
+            Avicenna</a>
+    </span>
+</p><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script></body>
+
+</html>
